@@ -24,17 +24,17 @@ function Details() {
   return (
 	<div className="flex flex-col items-center p-5">
 		<h1 className="text-4xl text-purple my-3">Product Details <small className="text-base">({detailData.category})</small></h1>
-		<div className="w-full flex justify-end">
+		<div className="w-full flex justify-end my-3">
 			<Link className="bg-transparent hover:bg-purple hover:text-white text-purple text-center font-bold py-2 px-4 border border-purple rounded cursor-pointer" to="/" >
 				Back to List
 			</Link>
 		</div>
 
-		<div className="w-full flex justify-evenly">
-			<div className='w-5/12 h-detail-card'>
+		<div className="w-full md:flex justify-evenly">
+			<div className='md:w-5/12 h-detail-card'>
 				<img alt={detailData.title} className="w-full h-full rounded" src={detailData.thumbnail}  />
 			</div>
-			<div className='w-5/12 h-detail-card space-y-5'>
+			<div className='md:w-5/12 h-detail-card space-y-5'>
 				<p className="text-2xl text-title" >{detailData.title}</p>
 
 				<p className="text-2xl text-title" >{detailData.brand}</p>

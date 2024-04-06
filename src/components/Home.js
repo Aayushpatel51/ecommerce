@@ -31,7 +31,7 @@ function Home() {
 	<div className="flex flex-col items-center">
 		<h1 className="text-4xl text-purple my-3">Products</h1>
 
-		<div className="grid grid-cols-4 gap-4 mt-5">
+		<div className="grid grid-cols-1 gap-4 mt-5 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
 			{data.map(item => (
 				<div className="flex flex-col justify-evenly w-96 h-96 p-4 rounded-md shadow-l">
 					<img alt={item.name} className="w-full h-44 rounded" key={item.id} src={item.thumbnail}  />
